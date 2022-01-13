@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="estilocronometro.css"></link>
+    <script src="scriptcronometro.js"></script>
+
+    </script>
+
 
     <title>CronometroJS</title>
 </head>
 <body>
     <div class="max-widht">
-        <button class="bg-green">Iniciar</button>
-        <button class="bg-yellow">Pausar</button>
-        <button class="bg-red">Parar</button>
+        <div class="itens">
+            <button onclick="start();" class="bg-green">Iniciar</button>
+            <button onclick="pause();" class="bg-yellow">Pausar</button>
+            <button onclick="stop();" class="bg-red">Parar</button>
 
-        <h1 id="counter">00:00:00</h1>
+            <h1 id="counter">00:00:00</h1>
+        </div>
     </div>
 </body>
 </html>
